@@ -153,3 +153,246 @@
     <!-- 后续内容区块... -->
 </body>
 </html>
+
+``html
+<!-- 第二屏 - 认知失调对比 -->
+<section class="comparison-section">
+    <div class="comparison-container">
+        <div class="column bad-side">
+            <div class="emoji">😩</div>
+            <h3>传统营销困境</h3>
+            <div class="stats-box">
+                <div class="stats-label">日均订单量</div>
+                <div class="stats-number bad">3</div>
+                <div class="stats-bar bad-bar" style="width: 30%"></div>
+            </div>
+            <ul class="pain-list">
+                <li>❌ 手动跟进耗时费力</li>
+                <li>❌ 客户转化率低于5%</li>
+                <li>❌ 50%客户流失率</li>
+            </ul>
+        </div>
+
+        <div class="vs-circle">VS</div>
+
+        <div class="column good-side">
+            <div class="emoji">🚀</div>
+            <h3>AI营销革命</h3>
+            <div class="stats-box">
+                <div class="stats-label">日均订单量</div>
+                <div class="stats-number good">17</div>
+                <div class="stats-bar good-bar" style="width: 90%"></div>
+            </div>
+            <ul class="benefit-list">
+                <li>✅ 24小时自动跟进</li>
+                <li>✅ 转化率提升至38%</li>
+                <li>✅ 客户留存率80%</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="challenge-text">
+        <h2>你选择继续落后，还是现在升级AI武器库？</h2>
+    </div>
+</section>
+
+<!-- 第三屏 - 证据轰炸系统 -->
+<section class="social-proof-section">
+    <div class="proof-container">
+        <div class="live-counter">
+            <div class="counter-item">
+                <div class="counter-number">1,327</div>
+                <div class="counter-label">位企业家已加入</div>
+            </div>
+            <div class="counter-item">
+                <div class="counter-number">¥58,920,100</div>
+                <div class="counter-label">累计创造业绩</div>
+            </div>
+        </div>
+
+        <div class="testimonial-carousel">
+            <!-- 客户评价轮播 -->
+            <div class="testimonial active">
+                <img src="avatar1.jpg" alt="学员头像" class="avatar">
+                <div class="quote">“AI话术让我们的客户回复率翻了7倍！”</div>
+                <div class="author">- 李总，教育行业</div>
+            </div>
+            <div class="testimonial">
+                <img src="avatar2.jpg" alt="学员头像" class="avatar">
+                <div class="quote">“报名第二天就收到17个新询盘！”</div>
+                <div class="author">- 王经理，电商行业</div>
+            </div>
+        </div>
+
+        <div class="media-wall">
+            <img src="media1.png" alt="媒体LOGO">
+            <img src="media2.png" alt="媒体LOGO">
+            <img src="media3.png" alt="媒体LOGO">
+        </div>
+    </div>
+</section>
+
+<style>
+/* 第二屏样式 */
+.comparison-section {
+    padding: 80px 20px;
+    background: #0A1F3D;
+    color: white;
+}
+
+.comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.column {
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.bad-side {
+    background: rgba(255,0,0,0.1);
+    border: 2px solid #FF3B3B;
+}
+
+.good-side {
+    background: rgba(0,255,136,0.1);
+    border: 2px solid #00FF88;
+}
+
+.vs-circle {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0A1F3D;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.stats-box {
+    margin: 30px 0;
+}
+
+.stats-number {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.bad { color: #FF3B3B; }
+.good { color: #00FF88; }
+
+.stats-bar {
+    height: 8px;
+    border-radius: 4px;
+    margin: 10px 0;
+    transition: width 1s ease-out;
+}
+
+.bad-bar { background: #FF3B3B; }
+.good-bar { background: #00FF88; }
+
+.challenge-text {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.challenge-text h2 {
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 第三屏样式 */
+.social-proof-section {
+    padding: 100px 20px;
+    background: #1A0F2C;
+}
+
+.live-counter {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.counter-item {
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #00FF88;
+    text-shadow: 0 0 20px rgba(0,255,136,0.3);
+}
+
+.testimonial-carousel {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    position: relative;
+    height: 300px;
+}
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.testimonial.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.media-wall {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    opacity: 0.8;
+}
+
+.media-wall img {
+    height: 40px;
+    filter: grayscale(1) brightness(2);
+}
+
+/* 动画 */
+@keyframes barGrow {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@media (max-width: 768px) {
+    .comparison-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+    
+    .vs-circle {
+        margin: -30px auto;
+    }
+    
+    .challenge-text h2 
+    
